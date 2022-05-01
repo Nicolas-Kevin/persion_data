@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8085402c-a182-48a3-b335-f7fcb1e17380" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_build_github_com_xinliangnote_go_gin_api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/go_build_github_com_xinliangnote_go_gin_api.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/personnel/personnel.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/personnel/personnel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_steam/gen_s_steam.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_steam/gen_s_steam.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/router_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/router_render.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_render.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/peronnel/peronnel_pagelist.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/personnel/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/personnel/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/go-gin-api-access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/go-gin-api-access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/go-gin-api-cron.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/go-gin-api-cron.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/swagger.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/swagger.bat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../tools/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="281LvtrJiX4arL8iyMrzdOOUswZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\go\gin_vue_api\internal" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="gin_vue_api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/xinliangnote/go-gin-api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin_vue_api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-env=fat" />
+      <kind value="DIRECTORY" />
+      <package value="$PROJECT_DIR$" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <output_directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="gin_vue_api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/xinliangnote/go-gin-api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>
