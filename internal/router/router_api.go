@@ -108,6 +108,7 @@ func setApiRouter(r *resource) {
 		orderHandler := personnel.New(r.logger, r.db)
 		persion.GET("/add", orderHandler.Create())
 		persion.GET("/get", orderHandler.List())
+		persion.GET("/getById", orderHandler.GetById())
 		//	persion.GET("/exp", orderHandler.Exp())
 	}
 
@@ -117,6 +118,7 @@ func setApiRouter(r *resource) {
 		trainHandler := train.New(r.logger, r.db)
 		trainG.GET("/add", trainHandler.Create())
 		trainG.GET("/get", trainHandler.List())
+		trainG.POST("/imageUpload", trainHandler.ImageUpload())
 		//	persion.GET("/exp", orderHandler.Exp())
 	}
 }

@@ -1,7 +1,6 @@
 package personnel
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/xinliangnote/go-gin-api/internal/code"
@@ -55,10 +54,10 @@ type listResponse struct {
 // @Router /api/personnel/list [get]
 // @Security LoginToken
 func (h *handler) List() core.HandlerFunc {
-	fmt.Println(">>>>>>>>>>>")
 	return func(ctx core.Context) {
 		//req := new(listRequest)
 		res := new(listResponse)
+
 		resListData, err := h.personnelServcie.List(ctx, new(personnel.SearchData))
 		if err != nil {
 			ctx.AbortWithError(core.Error(
@@ -104,7 +103,7 @@ func (h *handler) List() core.HandlerFunc {
 				Deleted:          v.Deleted,
 			}
 			res.Code = 0
-			res.Count = 100
+			res.Count = len(resListData)
 			res.List[k] = data
 		}
 		ctx.Payload(res)

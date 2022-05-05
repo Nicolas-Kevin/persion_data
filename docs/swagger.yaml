@@ -578,8 +578,74 @@ definitions:
         type: integer
     type: object
   personnel.createRequest:
+    properties:
+      bankNum:
+        description: 银行卡号
+        type: string
+      bloodType:
+        description: 血型cm
+        type: string
+      company:
+        description: 工作单位
+        type: string
+      headNum:
+        description: 头围cm
+        type: integer
+      idNum:
+        description: 身份证号
+        type: string
+      major:
+        description: 专业
+        type: string
+      phoneNum:
+        description: 电话号
+        type: string
+      politicalOutLook:
+        description: 社会面貌：0 :普通公民，1：团员，2：党员
+        type: integer
+      position:
+        description: 职称/等级
+        type: string
+      rewardStatus:
+        description: 奖励情况
+        type: string
+      shoeSize:
+        description: 鞋号cm
+        type: integer
+      trainStatus:
+        description: 演训情况
+        type: string
+      userAge:
+        description: 年龄
+        type: integer
+      userDate:
+        description: 出生年月日
+        type: string
+      userHeight:
+        description: 身高cm
+        type: integer
+      userLevel:
+        description: 级别
+        type: string
+      userName:
+        description: 姓名
+        type: string
+      userSex:
+        description: 性别（0：女，1：男）
+        type: integer
+      userTeam:
+        description: 部队编号
+        type: integer
+      userWeight:
+        description: 体重cm
+        type: integer
     type: object
   personnel.createResponse:
+    properties:
+      id:
+        type: integer
+      msg:
+        type: string
     type: object
   personnel.expRequest:
     type: object
@@ -588,6 +654,110 @@ definitions:
   personnel.listRequest:
     type: object
   personnel.listResponse:
+    properties:
+      code:
+        type: integer
+      count:
+        type: integer
+      data:
+        items:
+          $ref: '#/definitions/s_personnel.SPersonnel'
+        type: array
+    type: object
+  s_personnel.SPersonnel:
+    properties:
+      bankNum:
+        description: 银行卡号
+        type: string
+      bloodType:
+        description: 血型cm
+        type: string
+      company:
+        description: 工作单位
+        type: string
+      deleted:
+        type: integer
+      headNum:
+        description: 头围cm
+        type: integer
+      id:
+        type: integer
+      idNum:
+        description: 身份证号
+        type: string
+      major:
+        description: 专业
+        type: string
+      phoneNum:
+        description: 电话号
+        type: string
+      politicalOutLook:
+        description: 社会面貌：0 :普通公民，1：团员，2：党员
+        type: integer
+      position:
+        description: 职称/等级
+        type: string
+      rewardStatus:
+        description: 奖励情况
+        type: string
+      shoeSize:
+        description: 鞋号cm
+        type: integer
+      trainStatus:
+        description: 演训情况
+        type: string
+      userAge:
+        description: 年龄
+        type: integer
+      userDate:
+        description: 出生年月日
+        type: string
+      userHeight:
+        description: 身高cm
+        type: integer
+      userLevel:
+        description: 级别
+        type: string
+      userName:
+        description: 姓名
+        type: string
+      userSex:
+        description: 性别（0：女，1：男）
+        type: integer
+      userTeam:
+        description: 部队编号
+        type: integer
+      userWeight:
+        description: 体重cm
+        type: integer
+    type: object
+  s_train.STrain:
+    properties:
+      deleted:
+        type: integer
+      id:
+        type: integer
+      trainData:
+        description: 时间年月日
+        type: string
+      trainName:
+        description: 演训名称
+        type: string
+      trainNum:
+        description: 参赛人员数量
+        type: integer
+      trainOrg:
+        description: 地点（市）
+        type: string
+      trainPlace:
+        description: 组织方
+        type: string
+      trainProject:
+        description: 科目
+        type: string
+      trainTime:
+        description: 宣传图片，视频
+        type: string
     type: object
   tool.dbData:
     properties:
@@ -673,6 +843,27 @@ definitions:
         description: 数据表列表
         items:
           $ref: '#/definitions/tool.tableData'
+        type: array
+    type: object
+  train.createRequest:
+    type: object
+  train.createResponse:
+    type: object
+  train.expRequest:
+    type: object
+  train.expResponse:
+    type: object
+  train.listRequest:
+    type: object
+  train.listResponse:
+    properties:
+      code:
+        type: integer
+      count:
+        type: integer
+      data:
+        items:
+          $ref: '#/definitions/s_train.STrain'
         type: array
     type: object
 info:
@@ -2229,6 +2420,88 @@ paths:
       summary: 发送消息
       tags:
       - API.tool
+  /api/train/create:
+    get:
+      consumes:
+      - application/x-www-form-urlencoded
+      description: 创建
+      parameters:
+      - description: 请求信息
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/train.createRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/train.createResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/code.Failure'
+      security:
+      - LoginToken: []
+      summary: 创建
+      tags:
+      - API.train
+  /api/train/exp:
+    post:
+      consumes:
+      - application/x-www-form-urlencoded
+      description: 导出
+      parameters:
+      - description: 请求信息
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/train.expRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/train.expResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/code.Failure'
+      summary: 导出
+      tags:
+      - API.train
+  /api/tran/list:
+    get:
+      consumes:
+      - application/x-www-form-urlencoded
+      description: 人员列表
+      parameters:
+      - description: 请求信息
+        in: body
+        name: Request
+        required: true
+        schema:
+          $ref: '#/definitions/train.listRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/train.listResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/code.Failure'
+      security:
+      - LoginToken: []
+      summary: 人员列表
+      tags:
+      - API.train
   /helper/md5/{str}:
     get:
       consumes:

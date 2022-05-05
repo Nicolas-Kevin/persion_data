@@ -27,6 +27,11 @@ type Handler interface {
 	//@Tags API.personnel
 	//@Router /api/personnel/exp [post]
 	Exp() core.HandlerFunc
+
+	// GetById 获取指定id用户信息
+	//@Tags API.personnel
+	//@Router /api/personnel/getbyid [post]
+	GetById() core.HandlerFunc
 }
 
 type handler struct {

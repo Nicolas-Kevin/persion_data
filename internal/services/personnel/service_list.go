@@ -48,3 +48,22 @@ func (s *service) List(ctx core.Context, searchData *SearchData) (listData []*s_
 
 	return
 }
+
+func (s *service) ListById(ctx core.Context, searchData *SearchData) (listData []*s_personnel.SPersonnel, err error) {
+
+	qb := s_personnel.NewQueryBuilder()
+
+	if searchData.Id != 0 {
+		qb.WhereId(mysql.EqualPredicate, searchData.Id)
+	}
+
+	listData, err = qb.
+		OrderById(true).
+		WhereId(mysql.EqualPredicate, searchData.Id).
+		QueryAll(s.db.GetDbR().WithContext(ctx.RequestContext()))
+	if err != nil {
+		return nil, err
+	}
+
+	return
+}

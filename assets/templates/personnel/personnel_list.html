@@ -7,13 +7,18 @@
 </head>
 <body>
 
-<table id="demo" lay-filter="test"></table>
-
+<table   class="layui-hide" id="demo" lay-filter="test"></table>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+    <a class="layui-btn layui-btn-xs" lay-event="more">更多 <i class="layui-icon layui-icon-down"></i></a>
+</script>
 <script src="/assets/bootstrap/js/layui/layui.js"></script>
 <script>
     layui.use('table', function(){
         var table = layui.table;
-
+    var dropdown = layui.dropdown; //下拉菜单
+        var $ = layui.jquery
+        var form = layui.form
         //第一个实例
         table.render({
             elem: '#demo'
@@ -21,7 +26,8 @@
             ,url: '/api/personnel/get' //数据接口
             ,page: true //开启分页
             ,cols: [[ //表头
-                {field: 'Id', title: 'ID', width:80, sort: true, fixed: 'left'}
+                {type: 'checkbox', fixed: 'left'}
+                ,{field: 'Id', title: 'ID', width:80, sort: true, fixed: 'left'}
                 ,{field: 'UserName', title: '姓名', width:80}
                 ,{field: 'UserAge', title: '年龄', width:80, sort: true}
                 ,{field: 'UserSex', title: '性别', width:80,templet : function(data) {// 替换数据
@@ -56,7 +62,150 @@
                 ,{field: 'UserTeam', title: '部队编号', width: 135, sort: true}
                 ,{field: 'TrainStatus', title: '演训情况', width: 135, sort: true}
                 ,{field: 'RewardStatus', title: '奖励情况', width: 135, sort: true}
+                ,{fixed: 'right', width: 150, align:'center', toolbar: '#barDemo'}
             ]]
+        });
+
+        //监听头工具栏事件
+        table.on('toolbar(demo)', function(obj){
+            var checkStatus = table.checkStatus(obj.config.Id)
+                ,data = checkStatus.data; //获取选中的数据
+            switch(obj.event){
+                case 'add':
+                    layer.msg('添加');
+                    break;
+                case 'update':
+                    if(data.length === 0){
+                        layer.msg('请选择一行');
+                    } else if(data.length > 1){
+                        layer.msg('只能同时编辑一个');
+                    } else {
+                        layer.alert('编辑 [id]：'+ checkStatus.data[0].Id);
+                    }
+                    break;
+                case 'delete':
+                    if(data.length === 0){
+                        layer.msg('请选择一行');
+                    } else {
+                        layer.msg('删除');
+                    }
+                    break;
+            };
+        });
+
+        //监听行工具事件
+        table.on('tool(test)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+            var data = obj.data //获得当前行数据
+                ,layEvent = obj.event; //获得 lay-event 对应的值
+            if(layEvent === 'detail'){
+                layer.msg('查看操作');
+            } else if(layEvent === 'more'){
+                //下拉菜单
+                dropdown.render({
+                    elem: this //触发事件的 DOM 对象
+                    ,show: true //外部事件触发即显示
+                    ,data: [{
+                        title: '编辑'
+                        ,id: 'edit'
+                    },{
+                        title: '删除'
+                        ,id: 'del'
+                    }]
+                    ,click: function(menudata){
+                        if(menudata.id === 'del'){
+                            layer.confirm('真的删除行么', function(index){
+                                obj.del(); //删除对应行（tr）的DOM结构
+                                layer.close(index);
+                                //向服务端发送删除指令
+                            });
+                        } else if(menudata.id === 'edit'){
+                            layer.msg('编辑操作，当前行 ID:'+ data.Id);
+                            // layer.open({
+                            //     type: 2,
+                            //     title: 'iframe父子操作',
+                            //     maxmin: true,
+                            //     shadeClose: true, //点击遮罩关闭层
+                            //     area : ['800px' , '520px'],
+                            //     content: '/api/personnel/getById?id=' + data.Id,
+                            //     success:function (res) {
+                            //         alert(data.UserName)
+                            //         username = data.UserName
+                            //         form.val("layuiadmin-form-role", {
+                            //             "UserName":username // "name": "value"
+                            //             ,"UserSex": data.UserSex
+                            //             ,"UserAge": data.UserAge
+                            //             ,"PoliticalOutLook": data.PoliticalOutLook
+                            //             ,"UserDate": data.UserDate
+                            //             ,"Position": data.Position
+                            //             ,"Major": data.Major
+                            //             ,"UserLevel": data.UserLevel
+                            //             ,"UserHeight": data.UserHeight
+                            //             ,"UserWeight": data.UserWeight
+                            //             ,"ShoeSize": data.ShoeSize
+                            //             ,"HeadNum": data.HeadNum
+                            //             ,"BloodType": data.BloodType
+                            //             ,"IdNum": data.IdNum
+                            //             ,"BankNum": data.BankNum
+                            //             ,"PhoneNum": data.PhoneNum
+                            //             ,"UserTeam": data.UserTeam
+                            //             ,"TrainStatus": data.TrainStatus
+                            //             ,"RewardStatus": data.RewardStatus
+                            //
+                            //         })
+                            //
+                            //
+                            //     }
+                            // });
+                            $.ajax({
+                                url: '/api/personnel/getById?id=' + data.Id,
+                                type: 'get',
+                                dataType: 'json',
+                                async : true,
+                                success: function (data) {
+                                    layer.open({
+                                        type: 2,
+                                        title: 'iframe父子操作',
+                                        maxmin: true,
+                                        shadeClose: true, //点击遮罩关闭层
+                                        area : ['800px' , '520px'],
+                                        content: '/api/personnel/getById?id=' + data.Id,
+                                        success:function (data) {
+                                            alert(data.UserName)
+                                            username = data.UserName
+                                            form.val("layuiadmin-form-role", {
+                                                "UserName":username // "name": "value"
+                                                ,"UserSex": data.UserSex
+                                                ,"UserAge": data.UserAge
+                                                ,"PoliticalOutLook": data.PoliticalOutLook
+                                                ,"UserDate": data.UserDate
+                                                ,"Position": data.Position
+                                                ,"Major": data.Major
+                                                ,"UserLevel": data.UserLevel
+                                                ,"UserHeight": data.UserHeight
+                                                ,"UserWeight": data.UserWeight
+                                                ,"ShoeSize": data.ShoeSize
+                                                ,"HeadNum": data.HeadNum
+                                                ,"BloodType": data.BloodType
+                                                ,"IdNum": data.IdNum
+                                                ,"BankNum": data.BankNum
+                                                ,"PhoneNum": data.PhoneNum
+                                                ,"UserTeam": data.UserTeam
+                                                ,"TrainStatus": data.TrainStatus
+                                                ,"RewardStatus": data.RewardStatus
+
+                                            })
+
+
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    }
+                    ,align: 'right' //右对齐弹出（v2.6.8 新增）
+                    ,style: 'box-shadow: 1px 1px 10px rgb(0 0 0 / 12%);' //设置额外样式
+                })
+            }
         });
 
     });

@@ -1,7 +1,6 @@
 package personnel
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/xinliangnote/go-gin-api/internal/code"
@@ -50,7 +49,6 @@ type createResponse struct {
 //@Router /api/personnel/create [get]
 // @Security LoginToken
 func (h *handler) Create() core.HandlerFunc {
-	fmt.Println("add")
 	return func(ctx core.Context) {
 		req := new(createRequest)
 		res := new(createResponse)

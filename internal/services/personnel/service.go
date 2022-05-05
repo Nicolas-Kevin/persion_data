@@ -12,6 +12,8 @@ type Service interface {
 	i()
 	List(ctx core.Context, searchData *SearchData) (listData []*s_personnel.SPersonnel, err error)
 
+	ListById(ctx core.Context, searchData *SearchData) (listData []*s_personnel.SPersonnel, err error)
+
 	Create(ctx core.Context, personneldData *CreatePersonnelData) (id int64, err error)
 }
 

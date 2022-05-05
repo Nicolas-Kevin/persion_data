@@ -7,40 +7,40 @@
 </head>
 <body>
 <script src="/assets/bootstrap/js/layui/layui.js"></script>
-<form style="margin:10px" class="layui-form" action="/api/personnel/add">
+<form style="margin:10px" class="layui-form" action="/api/personnel/add" lay-filter="layuiadmin-form-role">
     <div class="layui-form-item">
         <label class="layui-form-label">姓名</label>
         <div class="layui-input-block">
-            <input type="text" name="userName" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+            <input type="text" name="UserName" id="UserName" required   lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">性别</label>
         <div class="layui-input-block">
-            <input type="radio" name="userSex" value="男" title="男">
-            <input type="radio" name="userSex" value="女" title="女" checked>
+            <input type="radio" name="UserSex" value="男" title="男">
+            <input type="radio" name="UserSex" value="女" title="女" checked>
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">年龄</label>
         <div class="layui-input-block">
-            <input type="text" name="UserAge" required  lay-verify="required" placeholder="请输入年龄" autocomplete="off" class="layui-input">
+            <input type="text" name="UserAge"  required  lay-verify="required" placeholder="请输入年龄" autocomplete="off" class="layui-input">
         </div>
     </div>
 
     <div class="layui-form-item">
         <label class="layui-form-label">社会面貌</label>
         <div class="layui-input-block">
-            <input type="radio" name="社会面貌" value="0" title="民众">
-            <input type="radio" name="社会面貌" value="1" title="团员">
-            <input type="radio" name="社会面貌" value="2" title="党员">
+            <input type="radio" name="PoliticalOutLook" value="0" title="民众">
+            <input type="radio" name="PoliticalOutLook" value="1" title="团员">
+            <input type="radio" name="PoliticalOutLook" value="2" title="党员">
 
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">出生年月日</label>
         <div class="layui-input-block">
-            <input type="text" class="layui-input" id="UserDate">
+            <input type="text" name="UserDate" class="layui-input" id="UserDate">
 <!--            <input type="text" name="UserDate" required  lay-verify="required" placeholder="请输入出生年月日" autocomplete="off" class="layui-input">-->
         </div>
     </div>

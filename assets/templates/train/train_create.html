@@ -7,142 +7,59 @@
 </head>
 <body>
 <script src="/assets/bootstrap/js/layui/layui.js"></script>
-<form style="margin:10px" class="layui-form" action="/api/personnel/add">
+<form style="margin:10px" class="layui-form" action="/api/train/add">
     <div class="layui-form-item">
-        <label class="layui-form-label">姓名</label>
+        <label class="layui-form-label">演训名称</label>
         <div class="layui-input-block">
-            <input type="text" name="userName" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">性别</label>
-        <div class="layui-input-block">
-            <input type="radio" name="userSex" value="男" title="男">
-            <input type="radio" name="userSex" value="女" title="女" checked>
+            <input type="text" name="trainName" required  lay-verify="required" placeholder="请输入演训名称" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">年龄</label>
+        <label class="layui-form-label">演训时间</label>
         <div class="layui-input-block">
-            <input type="text" name="UserAge" required  lay-verify="required" placeholder="请输入年龄" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">社会面貌</label>
-        <div class="layui-input-block">
-            <input type="radio" name="社会面貌" value="0" title="民众">
-            <input type="radio" name="社会面貌" value="1" title="团员">
-            <input type="radio" name="社会面貌" value="2" title="党员">
-
+            <input type="text" name="trainData" required  lay-verify="required" placeholder="请输入演训时间" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">出生年月日</label>
+        <label class="layui-form-label">演训地点</label>
         <div class="layui-input-block">
-            <input type="text" class="layui-input" id="UserDate">
-<!--            <input type="text" name="UserDate" required  lay-verify="required" placeholder="请输入出生年月日" autocomplete="off" class="layui-input">-->
+            <input type="text" name="trainOrg" required  lay-verify="required" placeholder="演训地点" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">职称/等级</label>
+        <label class="layui-form-label">参赛人员数量</label>
         <div class="layui-input-block">
-            <input type="text" name="Position" required  lay-verify="required" placeholder="请输入>职称/等级" autocomplete="off" class="layui-input">
+            <input type="text" name="trainNum" required  lay-verify="required" placeholder="请输入参赛人员数量" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">专业</label>
+        <label class="layui-form-label">科目</label>
         <div class="layui-input-block">
-            <input type="text" name="Major" required  lay-verify="required" placeholder="请输入专业" autocomplete="off" class="layui-input">
+            <input type="text" name="trainProject" required  lay-verify="required" placeholder="请输入科目" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">级别</label>
+        <label class="layui-form-label">组织方</label>
         <div class="layui-input-block">
-            <input type="text" name="UserLevel" required  lay-verify="required" placeholder="请输入级别" autocomplete="off" class="layui-input">
+            <input type="text" name="trainPlace" required  lay-verify="required" placeholder="请输入组织方" autocomplete="off" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">身高cm</label>
+        <label class="layui-form-label">宣传资料-图片</label>
         <div class="layui-input-block">
-            <input type="text" name="UserHeight" required  lay-verify="required" placeholder="请输入身高" autocomplete="off" class="layui-input">
+            <div class="layui-upload"> <button type="button" class="layui-btn" id="test2">多图片上传</button>
+                <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                    预览图：
+                    <div class="layui-upload-list" id="demo2"></div>
+                </blockquote>
+            </div>
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">体重cm</label>
+        <label class="layui-form-label">宣传资料-视频</label>
         <div class="layui-input-block">
-            <input type="text" name="UserWeight" required  lay-verify="required" placeholder="请输入体重" autocomplete="off" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
-        <label class="layui-form-label">鞋号cm</label>
-        <div class="layui-input-block">
-            <input type="text" name="ShoeSize" required  lay-verify="required" placeholder="请输入鞋号" autocomplete="off" class="layui-input">
-        </div>
-    </div> <div class="layui-form-item">
-    <label class="layui-form-label">头围cm</label>
-    <div class="layui-input-block">
-        <input type="text" name="HeadNum" required  lay-verify="required" placeholder="请输入头围" autocomplete="off" class="layui-input">
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">血型</label>
-        <div class="layui-input-block">
-            <input type="radio" name="BloodType" value="A" title="A">
-            <input type="radio" name="BloodType" value="B" title="B">
-            <input type="radio" name="BloodType" value="AB" title="AB">
-            <input type="radio" name="BloodType" value="O" title="O">
-
-        </div>
-    </div>
-
-    </div> <div class="layui-form-item">
-    <label class="layui-form-label">身份证号</label>
-    <div class="layui-input-block">
-        <input type="text" name="IdNum" required  lay-verify="required" placeholder="请输入身份证号" autocomplete="off" class="layui-input">
-    </div>
-</div>
-    </div> <div class="layui-form-item">
-    <label class="layui-form-label">银行卡号</label>
-    <div class="layui-input-block">
-        <input type="text" name="BankNum" required  lay-verify="required" placeholder="请输入银行卡号" autocomplete="off" class="layui-input">
-    </div>
-</div>
-    </div> <div class="layui-form-item">
-    <label class="layui-form-label">电话号</label>
-    <div class="layui-input-block">
-        <input type="text" name="PhoneNum" required  lay-verify="required" placeholder="请输入电话号" autocomplete="off" class="layui-input">
-    </div>
-</div>
-
-
-    <
-    <div class="layui-form-item">
-        <label class="layui-form-label">部队编号</label>
-        <div class="layui-input-block">
-            <select name="UserTeam" lay-verify="required">
-                <option value=""></option>
-                <option value="0">北京</option>
-                <option value="1">上海</option>
-                <option value="2">广州</option>
-                <option value="3">深圳</option>
-                <option value="4">杭州</option>
-            </select>
-        </div>
-    </div>
-
-
-
-    <div class="layui-form-item layui-form-text">
-        <label class="layui-form-label">演训情况</label>
-        <div class="layui-input-block">
-            <textarea name="TrainStatus" placeholder="请输入演训情况" class="layui-textarea"></textarea>
-        </div>
-    </div>
-    <div class="layui-form-item layui-form-text">
-        <label class="layui-form-label">奖励情况</label>
-        <div class="layui-input-block">
-            <textarea name="RewardStatus" placeholder="请输入奖励情况" class="layui-textarea"></textarea>
+            <div class="layui-btn-container"><button type="button" class="layui-btn" id="test5"><i class="layui-icon"></i>上传视频</button>
+            </div>
         </div>
     </div>
     <div class="layui-form-item">
@@ -154,15 +71,44 @@
 </form>
 
 <script>
-
-
-
     //Demo
     layui.use('form', function(){
+        var $ = layui.jquery
         var laydate = layui.laydate;
         var form = layui.form;
+        var upload = layui.upload
+        upload.render({
+            elem: '#test5'
+            ,url: 'https://httpbin.org/post' //此处配置你自己的上传接口即可
+            ,accept: 'video' //视频
+            ,done: function(res){
+                layer.msg('上传成功');
+                console.log(res)
+            }
+        });
+
+        //多图片上传
+        upload.render({
+            elem: '#test2'
+            ,url: '/api/train/imageUpload' //此处配置你自己的上传接口即可
+            ,multiple: true
+           // ,exts: 'jpg|png|gif|'        //可传输文件的后缀
+            ,accept: 'multipart/form-data'
+            ,before: function(obj){
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    alert(result)
+                    alert(file.name)
+                    $('#demo2').append('<img src="'+ result +'" alt="'+ file.name +'" class="layui-upload-img">')
+                });
+            }
+            ,done: function(res){
+                //上传完毕
+            }
+        });
+
         laydate.render({
-            elem: '#UserDate'
+            elem: '#TrainData'
             ,value: "2021-08-18" //必须遵循format参数设定的格式
         });
 

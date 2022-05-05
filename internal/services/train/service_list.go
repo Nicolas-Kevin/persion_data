@@ -26,8 +26,7 @@ func (s *service) List(ctx core.Context, searchData *SearchData) (listData []*s_
 		qb.WhereId(mysql.EqualPredicate, searchData.Id)
 	}
 
-	listData, err = qb.WhereId(mysql.EqualPredicate,searchData.Id).
-		OrderById(true).
+	listData, err = qb.OrderById(true).
 		QueryAll(s.db.GetDbR().WithContext(ctx.RequestContext()))
 	if err != nil {
 		return nil, err

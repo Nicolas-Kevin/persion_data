@@ -19,26 +19,26 @@ type trainInfo struct {
 	TrainTime    string // 宣传图片，视频
 	Deleted      int32  //
 }
-type listRequest struct{
-
+type listRequest struct {
 }
 
-type listResponse struct{
-	Code  int                      `json:"code"`
-	Count int                      `json:"count"`
+type listResponse struct {
+	Code  int              `json:"code"`
+	Count int              `json:"count"`
 	List  []s_train.STrain `json:"data"`
 }
 
 // List 人员列表
 // @Summary 人员列表
 // @Description 人员列表
-// @Tags API.personnel
+// @Tags API.train
 // @Accept application/x-www-form-urlencoded
 // @Produce json
 // @Param Request body listRequest true "请求信息"
 // @Success 200 {object} listResponse
 // @Failure 400 {object} code.Failure
-// @Router /api/personnel/list [get]
+// @Router /api/tran/list [get]
+// @Security LoginToken
 func (h *handler) List() core.HandlerFunc {
 	return func(ctx core.Context) {
 		res := new(listResponse)
@@ -63,18 +63,18 @@ func (h *handler) List() core.HandlerFunc {
 			}
 
 			data := s_train.STrain{
-				Id:               v.Id,
-				TrainName:         v.TrainName,
-				TrainData:          v.TrainData,
-				TrainOrg:          v.TrainOrg,
-				TrainNum:         v.TrainNum,
+				Id:           v.Id,
+				TrainName:    v.TrainName,
+				TrainData:    v.TrainData,
+				TrainOrg:     v.TrainOrg,
+				TrainNum:     v.TrainNum,
 				TrainProject: v.TrainProject,
-				TrainPlace:          v.TrainPlace,
-				TrainTime:         v.TrainTime,
-				Deleted:          v.Deleted,
+				TrainPlace:   v.TrainPlace,
+				TrainTime:    v.TrainTime,
+				Deleted:      v.Deleted,
 			}
 			res.Code = 0
-			res.Count = 100
+			res.Count = len(resListData)
 			res.List[k] = data
 		}
 		ctx.Payload(res)

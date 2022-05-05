@@ -18,44 +18,17 @@
         table.render({
             elem: '#demo'
             ,height: 312
-            ,url: '/api/personnel/get' //数据接口
+            ,url: '/api/train/get' //数据接口
             ,page: true //开启分页
             ,cols: [[ //表头
                 {field: 'Id', title: 'ID', width:80, sort: true, fixed: 'left'}
-                ,{field: 'UserName', title: '姓名', width:80}
-                ,{field: 'UserAge', title: '年龄', width:80, sort: true}
-                ,{field: 'UserSex', title: '性别', width:80,templet : function(data) {// 替换数据
-                        if (data.UserSex == 0) {
-                            return "女";
-                        } else if (data.UserSex == 1) {
-                            return "男";
-                        }
-                    }}
-                ,{field: 'UserDate', title: '出生日期', width: 177}
-                ,{field: 'PoliticalOutLook', title: '社会面貌', width: 80,templet : function(data) {// 替换数据
-                        if (data.PoliticalOutLook == 0) {
-                            return "群众";
-                        } else if (data.PoliticalOutLook == 1) {
-                            return "团员";
-                        }else if (data.PoliticalOutLook == 1) {
-                            return "党员";
-                        }
-                    }}
-                ,{field: 'Company', title: '工作单位', width: 80, sort: true}
-                ,{field: 'Position', title: '职称/等级', width: 80}
-                ,{field: 'Major', title: '专业', width: 135, sort: true}
-                ,{field: 'UserLevel', title: '级别', width: 135, sort: true}
-                ,{field: 'UserHeight', title: '身高cm', width: 135, sort: true}
-                ,{field: 'UserWeight', title: '体重kg', width: 135, sort: true}
-                ,{field: 'ShoeSize', title: '鞋号', width: 135, sort: true}
-                ,{field: 'HeadNum', title: '头围cm', width: 135, sort: true}
-                ,{field: 'BloodType', title: '血型', width: 135}
-                ,{field: 'IdNum', title: '身份证号', width: 135, sort: true}
-                ,{field: 'BankNum', title: '银行卡号', width: 135, sort: true}
-                ,{field: 'PhoneNum', title: '电话号', width: 135, sort: true}
-                ,{field: 'UserTeam', title: '部队编号', width: 135, sort: true}
-                ,{field: 'TrainStatus', title: '演训情况', width: 135, sort: true}
-                ,{field: 'RewardStatus', title: '奖励情况', width: 135, sort: true}
+                ,{field: 'TrainName', title: '演训名称', width:100}
+                ,{field: 'TrainData', title: '时间', width:100, sort: true}
+                ,{field: 'TrainNum', title: '参赛人员数量', width:80, sort: true}
+                ,{field: 'TrainOrg', title: '地点', width:100}
+                ,{field: 'TrainProject', title: '科目', width:80, sort: true}
+                ,{field: 'TrainPlace', title: '组织方', width:100, sort: true}
+                ,{field: 'TrainTime', title: '宣传图片，视频', width:80, sort: true}
             ]]
         });
 
