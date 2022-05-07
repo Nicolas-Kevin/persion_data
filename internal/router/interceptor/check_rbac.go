@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/redis"
-	"github.com/xinliangnote/go-gin-api/internal/services/admin"
-	"github.com/xinliangnote/go-gin-api/pkg/errors"
-	"github.com/xinliangnote/go-gin-api/pkg/urltable"
+	"go-gin-api/configs"
+	"go-gin-api/internal/code"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/redis"
+	"go-gin-api/internal/services/admin"
+	"go-gin-api/pkg/errors"
+	"go-gin-api/pkg/urltable"
 )
 
 func (i *interceptor) CheckRBAC() core.HandlerFunc {

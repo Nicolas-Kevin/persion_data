@@ -1,8 +1,8 @@
 package cron
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql/cron_task"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/mysql/cron_task"
 )
 
 type CreateCronTaskData struct {

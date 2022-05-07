@@ -3,11 +3,11 @@ package admin
 import (
 	"net/http"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/redis"
-	"github.com/xinliangnote/go-gin-api/pkg/errors"
+	"go-gin-api/configs"
+	"go-gin-api/internal/code"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/redis"
+	"go-gin-api/pkg/errors"
 )
 
 type logoutResponse struct {

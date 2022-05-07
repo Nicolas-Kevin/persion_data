@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/pkg/errors"
+	"go-gin-api/configs"
+	"go-gin-api/pkg/errors"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

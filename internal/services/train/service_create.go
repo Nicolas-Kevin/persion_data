@@ -1,8 +1,8 @@
 package train
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql/s_train"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/mysql/s_train"
 )
 
 type CreateTrainData struct {

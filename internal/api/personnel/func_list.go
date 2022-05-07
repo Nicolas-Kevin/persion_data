@@ -3,10 +3,10 @@ package personnel
 import (
 	"net/http"
 
-	"github.com/xinliangnote/go-gin-api/internal/code"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql/s_personnel"
-	"github.com/xinliangnote/go-gin-api/internal/services/personnel"
+	"go-gin-api/internal/code"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/mysql/s_personnel"
+	"go-gin-api/internal/services/personnel"
 )
 
 type listData struct {

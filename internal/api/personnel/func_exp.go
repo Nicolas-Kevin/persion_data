@@ -1,7 +1,7 @@
 package personnel
 
 import (
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/pkg/core"
 )
 
 type expRequest struct{}

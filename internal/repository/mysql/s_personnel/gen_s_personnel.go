@@ -8,7 +8,7 @@ package s_personnel
 import (
 	"fmt"
 
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql"
+	"go-gin-api/internal/repository/mysql"
 
 	"github.com/pkg/errors"
 	"gorm.io/gorm"

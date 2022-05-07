@@ -3,8 +3,8 @@ package upgrade
 import (
 	"fmt"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
+	"go-gin-api/configs"
+	"go-gin-api/internal/pkg/core"
 )
 
 type upgradeViewResponse struct {

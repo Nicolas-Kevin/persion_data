@@ -3,11 +3,11 @@ package tool
 import (
 	"encoding/json"
 
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql"
-	"github.com/xinliangnote/go-gin-api/internal/repository/redis"
-	"github.com/xinliangnote/go-gin-api/pkg/file"
+	"go-gin-api/configs"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/mysql"
+	"go-gin-api/internal/repository/redis"
+	"go-gin-api/pkg/file"
 
 	"go.uber.org/zap"
 )

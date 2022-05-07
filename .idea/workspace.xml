@@ -6,24 +6,208 @@
   <component name="ChangeListManager">
     <list default="true" id="8085402c-a182-48a3-b335-f7fcb1e17380" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/templates/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gormgen/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gormgen/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/gormgen/pkg/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/gormgen/pkg/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/handlergen/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/handlergen/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mfmt/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mfmt/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mysqlmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mysqlmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mysqlmd/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mysqlmd/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/configs.go" beforeDir="false" afterPath="$PROJECT_DIR$/configs/configs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/configs/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/fat_configs.toml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/fat_configs.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go_build_github_com_xinliangnote_go_gin_api.exe" beforeDir="false" afterPath="$PROJECT_DIR$/go_build_github_com_xinliangnote_go_gin_api.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gqlgen.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gqlgen.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/alert/alert.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/alert/alert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_createadminmenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_createadminmenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_listadminmenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_listadminmenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_login.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_logout.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_logout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_modifypassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_modifypassword.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_modifypersonalinfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_modifypersonalinfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_offline.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_offline.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_resetpassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_resetpassword.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/func_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/func_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/admin/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/admin/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_createapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_createapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_deleteapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_deleteapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_listapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_listapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/func_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/func_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/authorized/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/authorized/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/config/func_email.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/config/func_email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/config/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/config/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_modify.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_modify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/func_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/func_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/cron/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/cron/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/helper/func_md5.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/helper/func_md5.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/helper/func_sign.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/helper/func_sign.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/helper/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/helper/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_createaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_createaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_deleteaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_deleteaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_listaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_listaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_updatesort.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_updatesort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/func_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/func_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/menu/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/menu/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_exp.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/func_exp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_get.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/func_get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/personnel/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/func_list.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/api/personnel/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/personnel/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_clearcache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_clearcache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_dbs.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_dbs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_hashidsdecode.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_hashidsdecode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_hashidsencode.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_hashidsencode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_searchcache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_searchcache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_searchmysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_searchmysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_sendmessage.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_sendmessage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/func_tables.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/func_tables.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/tool/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/tool/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/train/func_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/train/func_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/train/func_exp.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/train/func_exp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/train/func_image_upload.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/train/func_image_upload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/train/func_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/train/func_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/api/train/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/api/train/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/code/code.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/code/code.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/graph/generated/generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/graph/generated/generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/graph/handler/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/graph/handler/handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/graph/resolvers/generated/generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/graph/resolvers/generated/generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/graph/resolvers/resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/graph/resolvers/resolvers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/graph/resolvers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/graph/resolvers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/metrics/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/metrics/metrics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/pkg/core/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/core/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/pkg/core/core.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/core/core.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/pkg/core/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/core/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/pkg/validation/validation.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pkg/validation/validation.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/admin/admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/admin/admin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/authorized/authorized.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/authorized/authorized.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/cron/cron.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/cron/cron.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/dashboard/dashboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/dashboard/dashboard.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/generator/generator.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/generator/generator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/generator/gorm_execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/generator/gorm_execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/generator/gorm_view.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/generator/gorm_view.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/generator/handler_execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/generator/handler_execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/generator/handler_view.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/generator/handler_view.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/index/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/index/index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/install/execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/install/execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/install/install.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/install/install.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/render/personnel/personnel.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/personnel/personnel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/tool/tool.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/tool/tool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/train/train.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/train/train.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/upgrade/execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/upgrade/execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/upgrade/upgrade.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/upgrade/upgrade.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/render/upgrade/view.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/render/upgrade/view.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/cron/cron.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/cron/cron.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/cron/cron_add_job.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/cron/cron_add_job.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/cron/cron_add_task.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/cron/cron_add_task.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/cron/cron_start.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/cron/cron_start.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/admin/gen_admin.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/admin/gen_admin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/admin_menu/gen_admin_menu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/admin_menu/gen_admin_menu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/authorized/gen_authorized.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/authorized/gen_authorized.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/authorized_api/gen_authorized_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/authorized_api/gen_authorized_api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/cron_task/gen_cron_task.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/cron_task/gen_cron_task.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/menu/gen_menu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/menu/gen_menu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/menu_action/gen_menu_action.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/menu_action/gen_menu_action.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/plugin.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/plugin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_log/gen_s_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_log/gen_s_log.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_personnel/gen_s_personnel.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_personnel/gen_s_personnel.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_steam/gen_s_steam.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_steam/gen_s_steam.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_s_train.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mysql/s_train/gen_s_train.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/redis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/socket/socket.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/socket/socket.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/interceptor/check_login.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/interceptor/check_login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/interceptor/check_rbac.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/interceptor/check_rbac.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/interceptor/check_signature.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/interceptor/check_signature.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/interceptor/interceptor.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/interceptor/interceptor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/router/router_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/router_graphql.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_graphql.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/router/router_render.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_render.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/services/peronnel/peronnel_pagelist.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/router/router_socket.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/router/router_socket.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_createmenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_createmenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_listmenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_listmenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_modifypassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_modifypassword.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_modifypersonalinfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_modifypersonalinfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_myaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_myaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_mymenu.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_mymenu.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_pagelist.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_pagelist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_pagelistcount.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_pagelistcount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_resetpassword.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_resetpassword.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/admin/service_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/admin/service_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_createapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_createapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_deleteapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_deleteapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_detailbykey.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_detailbykey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_listapi.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_listapi.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_pagelist.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_pagelist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_pagelistcount.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_pagelistcount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/authorized/service_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/authorized/service_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_execute.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_execute.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_modify.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_modify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_pagelist.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_pagelist.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_pagelistcount.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_pagelistcount.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/cron/service_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/cron/service_updateused.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_createaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_createaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_deleteaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_deleteaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_detail.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_detail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_listaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_listaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_modify.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_modify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_updatesort.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_updatesort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/menu/service_updateused.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/menu/service_updateused.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/services/personnel/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/personnel/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/go-gin-api-access.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/go-gin-api-access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/personnel/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/personnel/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/personnel/service_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/personnel/service_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/train/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/train/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/train/service_create.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/train/service_create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/services/train/service_list.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/services/train/service_list.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/websocket/sysmessage/sysmessage.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/websocket/sysmessage/sysmessage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/go-gin-api-cron.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/go-gin-api-cron.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/swagger.bat" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/swagger.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/debugs/print.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/debugs/print.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/httpclient/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/httpclient/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/httpclient/option.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/httpclient/option.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/httpclient/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/httpclient/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/signature/signature_generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/signature/signature_generate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/signature/signature_verify.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/signature/signature_verify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/timeutil/timeutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/timeutil/timeutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/urltable/urltable.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/urltable/urltable.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +226,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="281LvtrJiX4arL8iyMrzdOOUswZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,10 +252,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -72,7 +269,7 @@
       <recent name="D:\project\go\gin_vue_api\internal" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build github.com/xinliangnote/go-gin-api">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="gin_vue_api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -93,6 +290,17 @@
       <output_directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="personnel" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="gin_vue_api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <parameters value="-env=fat" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/xinliangnote/go-gin-api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <output_directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="gin_vue_api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -106,6 +314,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build github.com/xinliangnote/go-gin-api" />
+        <item itemvalue="Go Build.personnel" />
       </list>
     </recent_temporary>
   </component>
@@ -126,5 +335,121 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>58</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>60</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>37</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>38</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>39</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>31</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/train/func_image_upload.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/personnel/func_get.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/personnel/func_get.go</url>
+          <line>43</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/personnel/func_get.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/api/personnel/func_get.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/services/personnel/service_list.go</url>
+          <line>45</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/services/personnel/service_list.go</url>
+          <line>62</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/services/personnel/service_list.go</url>
+          <line>67</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/services/personnel/service_list.go</url>
+          <line>64</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pkg/timeutil/timeutil.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pkg/timeutil/timeutil.go</url>
+          <line>18</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pkg/timeutil/timeutil.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

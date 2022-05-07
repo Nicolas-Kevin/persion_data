@@ -1,11 +1,11 @@
 package train
 
 import (
-	"github.com/xinliangnote/go-gin-api/configs"
-	"github.com/xinliangnote/go-gin-api/internal/pkg/core"
-	"github.com/xinliangnote/go-gin-api/internal/repository/mysql"
-	"github.com/xinliangnote/go-gin-api/internal/services/train"
-	"github.com/xinliangnote/go-gin-api/pkg/hash"
+	"go-gin-api/configs"
+	"go-gin-api/internal/pkg/core"
+	"go-gin-api/internal/repository/mysql"
+	"go-gin-api/internal/services/train"
+	"go-gin-api/pkg/hash"
 	"go.uber.org/zap"
 )
 

@@ -16,7 +16,7 @@ const (
 	ProjectDomain = "http://127.0.0.1"
 
 	// ProjectPort 项目端口
-	ProjectPort = ":9999"
+	ProjectPort = ":8888"
 
 	// ProjectAccessLogFile 项目访问日志存放文件
 	ProjectAccessLogFile = "./logs/" + ProjectName + "-access.log"
