@@ -39,6 +39,7 @@ func main() {
 		logger.WithField("domain", fmt.Sprintf("%s[%s]", configs.ProjectName, env.Active().Value())),
 		logger.WithTimeLayout(timeutil.CSTLayout),
 		logger.WithFileP(configs.ProjectAccessLogFile),
+		logger.WithErrorLevel(),
 	)
 	if err != nil {
 		panic(err)

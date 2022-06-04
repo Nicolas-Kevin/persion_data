@@ -22,7 +22,7 @@
         //第一个实例
         table.render({
             elem: '#demo'
-            ,height: 312
+            ,height: 400
             ,url: '/api/personnel/get' //数据接口
             ,page: true //开启分页
             ,cols: [[ //表头
@@ -64,6 +64,7 @@
                 ,{field: 'RewardStatus', title: '奖励情况', width: 135, sort: true}
                 ,{fixed: 'right', width: 150, align:'center', toolbar: '#barDemo'}
             ]]
+            ,page: true
         });
 
         //监听头工具栏事件
@@ -120,42 +121,7 @@
                             });
                         } else if(menudata.id === 'edit'){
                             layer.msg('编辑操作，当前行 ID:'+ data.Id);
-                            // layer.open({
-                            //     type: 2,
-                            //     title: 'iframe父子操作',
-                            //     maxmin: true,
-                            //     shadeClose: true, //点击遮罩关闭层
-                            //     area : ['800px' , '520px'],
-                            //     content: '/api/personnel/getById?id=' + data.Id,
-                            //     success:function (res) {
-                            //         alert(data.UserName)
-                            //         username = data.UserName
-                            //         form.val("layuiadmin-form-role", {
-                            //             "UserName":username // "name": "value"
-                            //             ,"UserSex": data.UserSex
-                            //             ,"UserAge": data.UserAge
-                            //             ,"PoliticalOutLook": data.PoliticalOutLook
-                            //             ,"UserDate": data.UserDate
-                            //             ,"Position": data.Position
-                            //             ,"Major": data.Major
-                            //             ,"UserLevel": data.UserLevel
-                            //             ,"UserHeight": data.UserHeight
-                            //             ,"UserWeight": data.UserWeight
-                            //             ,"ShoeSize": data.ShoeSize
-                            //             ,"HeadNum": data.HeadNum
-                            //             ,"BloodType": data.BloodType
-                            //             ,"IdNum": data.IdNum
-                            //             ,"BankNum": data.BankNum
-                            //             ,"PhoneNum": data.PhoneNum
-                            //             ,"UserTeam": data.UserTeam
-                            //             ,"TrainStatus": data.TrainStatus
-                            //             ,"RewardStatus": data.RewardStatus
-                            //
-                            //         })
-                            //
-                            //
-                            //     }
-                            // });
+
                             $.ajax({
                                 url: '/api/personnel/getById?id=' + data.Id,
                                 type: 'get',
@@ -204,6 +170,7 @@
                     }
                     ,align: 'right' //右对齐弹出（v2.6.8 新增）
                     ,style: 'box-shadow: 1px 1px 10px rgb(0 0 0 / 12%);' //设置额外样式
+
                 })
             }
         });
