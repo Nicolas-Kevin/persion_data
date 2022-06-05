@@ -15,7 +15,7 @@ type Service interface {
 
 	Create(ctx core.Context, trainData *CreateTrainData) (id int32, err error)
 
-	ImageUpload(fheader *multipart.FileHeader) (err error)
+	ImageUpload(fheader *multipart.FileHeader) (path string, err error)
 }
 
 type service struct {
